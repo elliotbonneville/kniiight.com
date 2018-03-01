@@ -1,0 +1,8 @@
+@font-face {
+	font-family: "VideoTerminalScreen";
+	src: url("http://kniiight.com/web_fonts/VTSR____.TTF");
+}
+
+body {
+	background-color: black;
+}

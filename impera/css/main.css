@@ -1,0 +1,23 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	overflow: hidden;
+}
+
+div {
+	color: white;
+	font-family: VideoTerminalScreen;
+	font-size: 20pt;
+	margin: 10px;
+	margin-left: 9px;
+}
+
+#game {
+	opacity: 0;
+}
+
+@font-face {
+	font-family: "VideoTerminalScreen";
+	src: url("http://kniiight.com/web_fonts/font/VTSR____.TTF");
+}

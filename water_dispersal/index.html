@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<head>
+	<title>Water Dispersal</title>
+
+	<!-- stylesheet includes !-->
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.10.3.custom.css" />
+
+	<!-- vendor script includes !-->
+	<script type="text/javascript" src="js/vendor/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="js/vendor/jquery-ui-1.10.3.custom.js"></script>
+	<script type="text/javascript" src="js/vendor/perlin-noise-simplex.js"></script>
+	
+	<!-- source script includes !-->
+	<script type="text/javascript" src="js/source/main.js"></script>
+</head>
+
+<body oncontextmenu="return false;">
+	<canvas id="land_render"></canvas>
+	<canvas id="water_render"></canvas>
+	<canvas id="brush_render"></canvas>
+	
+	<div id="menu">
+			<span class="label">Tool:</span>
+		
+			<div id="toolset">
+				<input type="radio" id="raise_terrain" name="toolset" checked="checked" /><label for="raise_terrain">Raise</label>
+				<input type="radio" id="lower_terrain" name="toolset" /><label for="lower_terrain" />Lower</label>
+				<input type="radio" id="smooth_terrain" name="toolset" /><label for="smooth_terrain" />Smooth</label>
+			</div>
+			
+			<span class="label">Brush size: </span>
+			<div id="brush_size_slider"></div>
+			
+			<span class="label">Brush intensity: </span>
+			<div id="brush_intensity_slider"></div>
+			
+			<div id="clear_water">Clear water</div>
+	</div>
+</body>

@@ -1,0 +1,667 @@
+{
+    "project": {
+        "name": "Arel",
+        "description": "Arel: a JavaScript Roguelike toolkit",
+        "version": "0.0.1",
+        "url": "http://heyjavascript.com"
+    },
+    "files": {
+        "arel.color.js": {
+            "name": "arel.color.js",
+            "modules": {
+                "color": 1
+            },
+            "classes": {
+                "RGBAColor": 1
+            },
+            "fors": {
+                "arel": 1
+            },
+            "namespaces": {}
+        },
+        "arel.display.js": {
+            "name": "arel.display.js",
+            "modules": {
+                "display": 1
+            },
+            "classes": {
+                "display": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "arel.input.js": {
+            "name": "arel.input.js",
+            "modules": {
+                "input": 1
+            },
+            "classes": {
+                "input": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "arel.js": {
+            "name": "arel.js",
+            "modules": {
+                "arel": 1
+            },
+            "classes": {
+                "arel": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {
+        "arel": {
+            "name": "arel",
+            "submodules": {
+                "color": 1,
+                "display": 1,
+                "input": 1
+            },
+            "classes": {
+                "arel": 1,
+                "RGBAColor": 1,
+                "display": 1,
+                "input": 1
+            },
+            "fors": {
+                "arel": 1
+            },
+            "namespaces": {},
+            "tag": "module",
+            "file": "arel.input.js",
+            "line": 9,
+            "description": "The namespace for the entire library"
+        },
+        "color": {
+            "name": "color",
+            "submodules": {},
+            "classes": {
+                "arel": 1,
+                "RGBAColor": 1
+            },
+            "fors": {
+                "arel": 1
+            },
+            "is_submodule": 1,
+            "namespaces": {},
+            "module": "arel",
+            "namespace": "",
+            "file": "arel.color.js",
+            "line": 102,
+            "description": "Provides the color module."
+        },
+        "display": {
+            "name": "display",
+            "submodules": {},
+            "classes": {
+                "display": 1
+            },
+            "fors": {},
+            "is_submodule": 1,
+            "namespaces": {},
+            "module": "arel",
+            "namespace": "",
+            "file": "arel.display.js",
+            "line": 9,
+            "description": "Provides the Display module"
+        },
+        "input": {
+            "name": "input",
+            "submodules": {},
+            "classes": {
+                "input": 1
+            },
+            "fors": {},
+            "is_submodule": 1,
+            "namespaces": {},
+            "module": "arel",
+            "namespace": "",
+            "file": "arel.input.js",
+            "line": 9,
+            "description": "Provides the Input module"
+        }
+    },
+    "classes": {
+        "arel": {
+            "name": "arel",
+            "shortname": "arel",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "arel",
+            "submodule": "color",
+            "namespace": "",
+            "file": "arel.js",
+            "line": 8,
+            "description": "Global namespace",
+            "static": 1
+        },
+        "RGBAColor": {
+            "name": "RGBAColor",
+            "shortname": "RGBAColor",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "arel",
+            "submodule": "color",
+            "namespace": "",
+            "file": "arel.color.js",
+            "line": 102,
+            "description": "Stores an RGBA color",
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "r",
+                    "description": ""
+                },
+                {
+                    "name": "g",
+                    "description": ""
+                },
+                {
+                    "name": "b",
+                    "description": ""
+                },
+                {
+                    "name": "a",
+                    "description": "",
+                    "optional": true
+                }
+            ]
+        },
+        "display": {
+            "name": "display",
+            "shortname": "display",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "arel",
+            "submodule": "display",
+            "namespace": "",
+            "file": "arel.display.js",
+            "line": 9,
+            "description": "Renders game data to the provided canvas element.",
+            "static": 1
+        },
+        "input": {
+            "name": "input",
+            "shortname": "input",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "arel",
+            "submodule": "input",
+            "namespace": "",
+            "file": "arel.input.js",
+            "line": 9,
+            "description": "Handles keyboard and mouse input.",
+            "static": 1
+        }
+    },
+    "classitems": [
+        {
+            "file": "arel.color.js",
+            "line": 28,
+            "description": "Returns a color.",
+            "itemtype": "method",
+            "name": "color",
+            "params": [
+                {
+                    "name": "r",
+                    "description": "Red component of an RGBA color."
+                },
+                {
+                    "name": "g",
+                    "description": "Green component of an RGBA color."
+                },
+                {
+                    "name": "b",
+                    "description": "Blue component of an RGBA color"
+                },
+                {
+                    "name": "a",
+                    "description": "Alpha component of an RGBA color.",
+                    "optional": true
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "RGBAColor"
+            },
+            "class": "arel",
+            "module": "arel",
+            "submodule": "color"
+        },
+        {
+            "file": "arel.color.js",
+            "line": 43,
+            "description": "Returns a color.",
+            "itemtype": "method",
+            "name": "color",
+            "params": [
+                {
+                    "name": "color",
+                    "description": "One of the 16 standard colors supported by all browsers."
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "RGBAColor"
+            },
+            "class": "arel",
+            "module": "arel",
+            "submodule": "color"
+        },
+        {
+            "file": "arel.color.js",
+            "line": 55,
+            "description": "Returns a color.",
+            "itemtype": "method",
+            "name": "color",
+            "params": [
+                {
+                    "name": "color",
+                    "description": "Hexadecimal representation of a color."
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "RGBAColor"
+            },
+            "class": "arel",
+            "module": "arel",
+            "submodule": "color"
+        },
+        {
+            "file": "arel.color.js",
+            "line": 113,
+            "description": "The red component of this color (range 0 to 255).",
+            "itemtype": "property",
+            "name": "r",
+            "type": "Number",
+            "class": "RGBAColor",
+            "module": "arel",
+            "submodule": "color"
+        },
+        {
+            "file": "arel.color.js",
+            "line": 121,
+            "description": "The green component of this color (range 0 to 255).",
+            "itemtype": "property",
+            "name": "g",
+            "type": "Number",
+            "class": "RGBAColor",
+            "module": "arel",
+            "submodule": "color"
+        },
+        {
+            "file": "arel.color.js",
+            "line": 129,
+            "description": "The blue component of this color (range 0 to 255).",
+            "itemtype": "property",
+            "name": "b",
+            "type": "Number",
+            "class": "RGBAColor",
+            "module": "arel",
+            "submodule": "color"
+        },
+        {
+            "file": "arel.color.js",
+            "line": 137,
+            "description": "The alpha component of this color (range 0 to 1).",
+            "itemtype": "property",
+            "name": "a",
+            "type": "Number",
+            "class": "RGBAColor",
+            "module": "arel",
+            "submodule": "color"
+        },
+        {
+            "file": "arel.color.js",
+            "line": 146,
+            "description": "Returns the string value of this color in the format \"rgba(r, g, b, a)\".",
+            "itemtype": "method",
+            "name": "toString",
+            "return": {
+                "description": "String"
+            },
+            "class": "RGBAColor",
+            "module": "arel",
+            "submodule": "color"
+        },
+        {
+            "file": "arel.display.js",
+            "line": 17,
+            "description": "Initiates the display.",
+            "itemtype": "method",
+            "name": "__init",
+            "params": [
+                {
+                    "name": "parameters",
+                    "description": "",
+                    "type": "Object",
+                    "props": [
+                        {
+                            "name": "canvas",
+                            "description": ""
+                        },
+                        {
+                            "name": "width",
+                            "description": "The width of the map in cells."
+                        },
+                        {
+                            "name": "height",
+                            "description": "The height of the map in cells."
+                        },
+                        {
+                            "name": "font",
+                            "description": "",
+                            "optional": true
+                        },
+                        {
+                            "name": "fontSize",
+                            "description": "",
+                            "optional": true
+                        },
+                        {
+                            "name": "padding",
+                            "description": "",
+                            "optional": true
+                        },
+                        {
+                            "name": "renderBatching",
+                            "description": "",
+                            "optional": true
+                        }
+                    ]
+                }
+            ],
+            "class": "display",
+            "module": "arel",
+            "submodule": "display"
+        },
+        {
+            "file": "arel.display.js",
+            "line": 35,
+            "description": "The canvas element used for rendering.",
+            "itemtype": "property",
+            "name": "canvas",
+            "type": "HTMLCanvasElement",
+            "class": "display",
+            "module": "arel",
+            "submodule": "display"
+        },
+        {
+            "file": "arel.display.js",
+            "line": 43,
+            "description": "The context of the provided canvas element.",
+            "itemtype": "property",
+            "name": "context",
+            "type": "CanvasRenderingContext2D",
+            "class": "display",
+            "module": "arel",
+            "submodule": "display"
+        },
+        {
+            "file": "arel.display.js",
+            "line": 53,
+            "description": "Font used to render characters.",
+            "itemtype": "property",
+            "name": "font",
+            "type": "String",
+            "default": "Courier",
+            "class": "display",
+            "module": "arel",
+            "submodule": "display"
+        },
+        {
+            "file": "arel.display.js",
+            "line": 62,
+            "description": "Size to render font at, in points.",
+            "itemtype": "property",
+            "name": "fontSize",
+            "type": "Number",
+            "default": "12",
+            "class": "display",
+            "module": "arel",
+            "submodule": "display"
+        },
+        {
+            "file": "arel.display.js",
+            "line": 86,
+            "description": "The amount of padding between a rendered character and cell boundaries in pixels.",
+            "itemtype": "property",
+            "name": "padding",
+            "type": "Number",
+            "default": "1",
+            "class": "display",
+            "module": "arel",
+            "submodule": "display"
+        },
+        {
+            "file": "arel.display.js",
+            "line": 95,
+            "description": "The width used to render cells. Calculated from font size.",
+            "itemtype": "property",
+            "name": "cellWidth",
+            "type": "Number",
+            "class": "display",
+            "module": "arel",
+            "submodule": "display"
+        },
+        {
+            "file": "arel.display.js",
+            "line": 104,
+            "description": "The height used to render cells. Since the height in pixels of a font is its size \nin points, this value is equal to the font size.",
+            "itemtype": "property",
+            "name": "cellHeight",
+            "type": "Number",
+            "class": "display",
+            "module": "arel",
+            "submodule": "display"
+        },
+        {
+            "file": "arel.display.js",
+            "line": 117,
+            "description": "The width of the map, in cells.",
+            "itemtype": "property",
+            "name": "width",
+            "type": "Number",
+            "class": "display",
+            "module": "arel",
+            "submodule": "display"
+        },
+        {
+            "file": "arel.display.js",
+            "line": 125,
+            "description": "The height of the map, in cells.",
+            "itemtype": "property",
+            "name": "height",
+            "type": "Number",
+            "class": "display",
+            "module": "arel",
+            "submodule": "display"
+        },
+        {
+            "file": "arel.display.js",
+            "line": 133,
+            "description": "Whether or not to enable render batching (improves performance).",
+            "itemtype": "property",
+            "name": "renderBatching",
+            "type": "Boolean",
+            "default": "True",
+            "class": "display",
+            "module": "arel",
+            "submodule": "display"
+        },
+        {
+            "file": "arel.display.js",
+            "line": 158,
+            "description": "Draws a character to the screen.",
+            "itemtype": "method",
+            "name": "draw",
+            "params": [
+                {
+                    "name": "parameters",
+                    "description": "",
+                    "type": "Object",
+                    "props": [
+                        {
+                            "name": "x",
+                            "description": ""
+                        },
+                        {
+                            "name": "y",
+                            "description": ""
+                        },
+                        {
+                            "name": "character",
+                            "description": "",
+                            "optional": true
+                        },
+                        {
+                            "name": "color",
+                            "description": "",
+                            "optional": true
+                        },
+                        {
+                            "name": "backgroundColor",
+                            "description": "",
+                            "optional": true
+                        }
+                    ]
+                }
+            ],
+            "chainable": 1,
+            "return": {
+                "description": "Returns the display object to make chaining possible."
+            },
+            "class": "display",
+            "module": "arel",
+            "submodule": "display"
+        },
+        {
+            "file": "arel.display.js",
+            "line": 222,
+            "description": "Internal draw method used when batching is disabled.",
+            "access": "private",
+            "tagname": "",
+            "itemtype": "method",
+            "name": "_draw",
+            "class": "display",
+            "module": "arel",
+            "submodule": "display"
+        },
+        {
+            "file": "arel.display.js",
+            "line": 247,
+            "description": "Internal draw method used to draw foreground batches.",
+            "access": "private",
+            "tagname": "",
+            "itemtype": "method",
+            "name": "_drawForeground",
+            "class": "display",
+            "module": "arel",
+            "submodule": "display"
+        },
+        {
+            "file": "arel.display.js",
+            "line": 271,
+            "description": "Internal draw method used to draw background batches.",
+            "access": "private",
+            "tagname": "",
+            "itemtype": "method",
+            "name": "_drawForeground",
+            "class": "display",
+            "module": "arel",
+            "submodule": "display"
+        },
+        {
+            "file": "arel.input.js",
+            "line": 17,
+            "description": "Initiates input handling.",
+            "itemtype": "method",
+            "name": "__init",
+            "params": [
+                {
+                    "name": "parameters",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "input"
+            },
+            "class": "input",
+            "module": "arel",
+            "submodule": "input"
+        },
+        {
+            "file": "arel.js",
+            "line": 16,
+            "description": "Initiates Arel and all its modules. Should not be called until the document has loaded.",
+            "itemtype": "method",
+            "name": "init",
+            "params": [
+                {
+                    "name": "parameters",
+                    "description": "",
+                    "type": "Object",
+                    "props": [
+                        {
+                            "name": "canvas",
+                            "description": "The canvas element to render to."
+                        },
+                        {
+                            "name": "width",
+                            "description": "The width in cells of the map display."
+                        },
+                        {
+                            "name": "height",
+                            "description": "The height in cells of the map display."
+                        },
+                        {
+                            "name": "font",
+                            "description": "The font used in rendering (web-font enabled).",
+                            "optional": true
+                        },
+                        {
+                            "name": "fontSize",
+                            "description": "The font size used to render.",
+                            "optional": true
+                        },
+                        {
+                            "name": "padding",
+                            "description": "The padding between a rendered character and the borders of the cell it occupies.",
+                            "optional": true
+                        },
+                        {
+                            "name": "batchingEnabled",
+                            "description": "Whether or not to enable render batching. (Set to true by default.) Render batching increases render speed by 500% to 600%.",
+                            "optional": true
+                        }
+                    ]
+                }
+            ],
+            "return": {
+                "description": "Arel",
+                "type": "Object"
+            },
+            "class": "arel",
+            "module": "arel"
+        }
+    ],
+    "warnings": []
+}

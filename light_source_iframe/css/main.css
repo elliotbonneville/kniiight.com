@@ -1,0 +1,18 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	background-color: #f9f7f5;
+}
+
+h2 {
+	text-align: center;
+}
+
+p {
+	display: inline;
+	margin: 10px;
+}
+
+#map {
+	cursor: pointer;
+}

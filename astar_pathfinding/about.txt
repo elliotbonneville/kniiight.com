@@ -1,0 +1,2 @@
+A* Pathfinding
+An implementation of the A* pathfinding algorithm.

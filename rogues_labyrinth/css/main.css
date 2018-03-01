@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+body {
+	background-color: black;
+	font-family: Courier;
+	color: white;
+}
+
+#launch_game {
+	background-color: #777;
+	height: 20px;
+	margin: 0px auto;
+	line-height: 20px;
+	padding: 5px;
+	cursor: pointer;
+	text-align: center;
+	color: #111;
+	width: 195px;
+}
+
+#messageLog {
+	height: 80px;
+	width: 100%;
+	overflow-x: auto;
+	background-color: #444;
+}

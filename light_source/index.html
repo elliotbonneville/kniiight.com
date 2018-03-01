@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<head>
+	<title>Light Source</title>
+
+	<!-- stylesheet includes !-->
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+
+	<!-- vendor script includes !-->
+	<script type="text/javascript" src="js/vendor/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript" src="jscolor/jscolor.js"></script>
+
+	<!-- source script includes !-->
+	<script type="text/javascript" src="js/source/main.js"></script>
+</head>
+
+<body>
+	<div id="menu">
+		<p>Light radius:</p><input type="number" id="radius" value="6" max="99" min="0" maxlength="2" size="2"></input>
+		<p>Light color:</p><input class="color {pickerClosable:true, onImmediateChange:'updateLightColor(this);'}" id="light_color" value="CFCEBA"></input>
+		<p>Wall color:</p><input class="color {pickerClosable:true, onImmediateChange:'updateWallColor(this);'}" id="wall_color" value="7D7D7D"></input>
+		<p>Background color:</p><input class="color {pickerClosable:true, onImmediateChange:'updateBackgroundColor(this);'}" id="bkg_color" value="000"></input>
+	</div>
+
+	<div id="menu_space"></div>
+
+	<canvas id="map" width="640" height="640"></canvas>
+</body>
